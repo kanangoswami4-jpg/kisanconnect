@@ -1,0 +1,572 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #183b28;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+    background: #174d2c;
+    color: white;
+    padding: 8px 7%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    height: 78px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    color: #176b38;
+    font-size: 21px;
+}
+
+.logo p {
+    color: #777;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #218c4b;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons button {
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: 1px solid #218c4b;
+    background: white;
+    color: #218c4b;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav-buttons button:last-child {
+    background: #218c4b;
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 560px;
+    padding: 70px 7%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.85fr 0.9fr;
+    gap: 45px;
+    align-items: center;
+
+    background: linear-gradient(
+        120deg,
+        #eff8e9,
+        #fdfcf3
+    );
+}
+
+
+/* HERO TEXT */
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.12;
+    color: #174d2c;
+    margin-bottom: 22px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #53645a;
+    max-width: 480px;
+}
+
+.hero-text h3 {
+    margin-top: 28px;
+    font-size: 15px;
+    color: #218c4b;
+}
+
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-box {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.10);
+
+    text-align: center;
+}
+
+.login-box > h2:first-child {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.login-box h2 {
+    color: #218c4b;
+}
+
+.login-box h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.login-box p {
+    color: #777;
+    font-size: 12px;
+    margin: 8px 0 14px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 13px;
+    margin: 6px 0;
+
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+
+    outline: none;
+    font-size: 13px;
+}
+
+.login-box input:focus {
+    border-color: #218c4b;
+}
+
+.login-box > a {
+    display: block;
+    text-align: right;
+    color: #218c4b;
+    font-size: 11px;
+    margin: 6px 0 16px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #218c4b;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.login-box button:nth-of-type(2) {
+    background: white;
+    color: #333;
+    border: 1px solid #dddddd;
+}
+
+.login-box button:hover {
+    opacity: 0.9;
+}
+
+.login-box p a {
+    color: #218c4b;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature {
+    background: white;
+    padding: 19px;
+
+    border-radius: 12px;
+    border: 1px solid #e2eadf;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+.feature h3 {
+    display: inline;
+    margin-left: 8px;
+    font-size: 15px;
+    color: #174d2c;
+}
+
+.feature p {
+    margin-top: 8px;
+    margin-left: 27px;
+    color: #707870;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.statistics {
+    padding: 35px 7%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: #174d2c;
+    color: white;
+    text-align: center;
+}
+
+.statistics div {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.statistics div:last-child {
+    border-right: none;
+}
+
+.statistics h2 {
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.statistics p {
+    font-size: 13px;
+    color: #d5e7da;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-it-works {
+    padding: 75px 7%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.how-it-works > h2 {
+    font-size: 32px;
+    color: #174d2c;
+}
+
+.how-it-works > p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 14px;
+}
+
+.steps {
+    margin-top: 45px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.step {
+    padding: 30px 20px;
+
+    background: #f8fbf6;
+    border: 1px solid #e2eadf;
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-7px);
+    border-color: #8ac49b;
+}
+
+.step span {
+    display: inline-flex;
+
+    width: 48px;
+    height: 48px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dff1d9;
+    color: #218c4b;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step h3 {
+    margin-top: 17px;
+    color: #174d2c;
+    font-size: 17px;
+}
+
+.step p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 55px 7% 20px;
+
+    background: #103d24;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr;
+
+    gap: 45px;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #cbdccf;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+footer a {
+    color: #cbdccf;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer input {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    margin-top: 10px;
+
+    outline: none;
+}
+
+footer button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #6dbb62;
+    color: white;
+
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+footer hr {
+    grid-column: 1 / -1;
+
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    margin-top: 15px;
+}
+
+footer > p:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    header {
+        padding: 15px 4%;
+        height: auto;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-text {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin: auto;
+    }
+
+    .features {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .top-bar {
+        padding: 8px 4%;
+        font-size: 9px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 45px 5%;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .statistics div {
+        border-right: none;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        padding: 40px 7% 20px;
+    }
+}
